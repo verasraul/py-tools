@@ -10,7 +10,7 @@ def ping_host():
     for name, value in ips.items():
         process = subprocess.call(['ping', '-c', '5', value])
         if process == 0:
-            print (f"ping to", name, "OK")
+            print ("ping to", name, "OK")
         elif process == 2:
             print ("no response from", name)
         else:
